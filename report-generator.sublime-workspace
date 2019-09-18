@@ -1,0 +1,766 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"th",
+				"this"
+			],
+			[
+				"reco",
+				"records"
+			],
+			[
+				"recor",
+				"recordGenStartTime"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"DB",
+				"DBModel"
+			],
+			[
+				"crea",
+				"created_at"
+			],
+			[
+				"report",
+				"report_file_id"
+			],
+			[
+				"fetch",
+				"fetchRecordByRegionID($regionID)\tmixed"
+			],
+			[
+				"dom",
+				"dompdf-"
+			],
+			[
+				"depa",
+				"departmentRecords"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"flex-no",
+				"flex-md-nowrap \tBootstrap 4.3 Class"
+			],
+			[
+				"now",
+				"flex-xl-nowrap \tBootstrap 4.3 Class"
+			],
+			[
+				"overflow",
+				"overflow-x\tproperty"
+			],
+			[
+				"over",
+				"overflow-x\tproperty"
+			],
+			[
+				"text-s",
+				"text-success \tBootstrap 4.3 Class"
+			],
+			[
+				"mb",
+				"mb-4 \tBootstrap 4.3 Class"
+			],
+			[
+				"w-",
+				"w-auto \tBootstrap 4.3 Class"
+			],
+			[
+				"font",
+				"font-weight-bold \tBootstrap 4.3 Class"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"Upda",
+				"UpdateDepartment\tUpdateDepartment"
+			],
+			[
+				"departments",
+				"departments-table"
+			],
+			[
+				"action",
+				"action-url"
+			],
+			[
+				"data",
+				"dataField"
+			],
+			[
+				"dataT",
+				"dataTableInstance"
+			],
+			[
+				"respo",
+				"response"
+			],
+			[
+				"room_",
+				"room_name"
+			],
+			[
+				"room",
+				"room_number"
+			],
+			[
+				"uniq",
+				"unique"
+			],
+			[
+				"emp",
+				"emptyValueArray"
+			],
+			[
+				"text-",
+				"text-center"
+			],
+			[
+				"ali",
+				"align-content-center \tBootstrap 4.3 Class"
+			],
+			[
+				"submi",
+				"submitAddDepartment"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"w",
+				"w-100 \tBootstrap 4.3 Class"
+			],
+			[
+				"h-",
+				"h-auto \tBootstrap 4.3 Class"
+			],
+			[
+				"arra",
+				"array"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/Model.php",
+			"settings":
+			{
+				"buffer_size": 1766,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/PDFGenerator.php",
+			"settings":
+			{
+				"buffer_size": 1096,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.php",
+			"settings":
+			{
+				"buffer_size": 133,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/html/ched-work/report-generator",
+		"/var/www/html/ched-work/report-generator/src"
+	],
+	"file_history":
+	[
+		"/var/www/html/ched-work/report-generator/src/DB.php",
+		"/var/www/html/ched-work/report-generator/src/config.php",
+		"/var/www/html/ched-work/report-generator/composer.json",
+		"/var/www/html/ched-work/report-gen/api/GenRecords-back.php",
+		"/var/www/html/ched-work/report-gen/includes/Classes/dompdf/lib/Cpdf.php",
+		"/var/www/html/ched-work/report-gen/public/PDFs",
+		"/var/www/html/ched-work/report-gen/includes/Classes/FPDF.php",
+		"/var/www/html/ched-work/ched-management/resources/views/dashboard/index.blade.php",
+		"/var/www/html/ched-work/ched-management/resources/views/departments/index.blade.php",
+		"/var/www/html/ched-work/ched-management/resources/views/layouts/sidebar.blade.php",
+		"/var/www/html/ched-work/ched-management/public/assets/css/overwrite.css",
+		"/var/www/html/ched-work/ched-management/public/assets/js/app/dashboard.js",
+		"/var/www/html/ched-work/ched-management/public/assets/js/app_model.js",
+		"/var/www/html/ched-work/ched-management/resources/views/layouts/app.blade.php",
+		"/var/www/html/ched-work/ched-management/public/assets/css/azia.css",
+		"/var/www/html/ched-work/ched-management/resources/views/errors/401.blade.php",
+		"/var/www/html/ched-work/ched-management/resources/views/auth/login.blade.php",
+		"/var/www/html/ched-work/ched-management/app/Employee.php",
+		"/var/www/html/ched-work/ched-management/app/Providers/AuthServiceProvider.php",
+		"/var/www/html/ched-work/ched-management/app/Http/Controllers/AllDepartmentsController.php",
+		"/var/www/html/ched-work/ched-management/app/Http/Kernel.php",
+		"/var/www/html/ched-work/ched-management/app/Traits/ThisRoute.php",
+		"/var/www/html/ched-work/ched-management/public/assets/js/app/departments.js",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/var/www/html/ched-work/ched-management/app/Http/Controllers/DepartmentController.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Auth/Access/Response.php",
+		"/var/www/html/ched-work/ched-management/database/migrations/2019_09_12_105455_create_roles_table.php",
+		"/var/www/html/ched-work/ched-management/database/migrations/2019_09_08_221650_create_employees_table.php",
+		"/var/www/html/ched-work/ched-management/database/migrations/2019_09_09_151429_create_departments_table.php",
+		"/var/www/html/ched-work/ched-management/resources/views/departments/edit.blade.php",
+		"/var/www/html/ched-work/ched-management/resources/views/departments/create.blade.php",
+		"/var/www/html/ched-work/ched-management/app/Http/Requests/CreateDepartment.php",
+		"/var/www/html/ched-work/ched-management/app/Http/Requests/UpdateDepartment.php",
+		"/var/www/html/ched-work/ched-management/.phpintel/.gitignore",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/var/www/html/ched-work/ched-management/public/assets/lib/noty/metroui.css",
+		"/var/www/html/ched-work/ched-management/resources/views/layouts/header.blade.php",
+		"/var/www/html/ched-work/ched-management/app/Department.php",
+		"/home/mi-dev/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/mi-dev/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/var/www/html/ched-work/ched-management/public/assets/lib/blockui/blockui.js",
+		"/var/www/html/ched-work/ched-management/public/assets/lib/noty/noty.css",
+		"/var/www/html/ched-work/ched-management/public/assets/lib/noty/noty.js",
+		"/var/www/html/ched-work/ched-management/app/Http/Middleware/Authenticate.php",
+		"/var/www/html/ched-work/ched-management/readme.md",
+		"/var/www/html/ched-work/ched-management/public/assets/lib/datatables.net-dt/js/dataTables.dataTables.min.js",
+		"/var/www/html/ched-work/ched-management/public/assets/lib/fontawesome-free/css/all.min.css",
+		"/var/www/html/ched-work/ched-management/public/assets/lib/ionicons/css/ionicons.min.css",
+		"/var/www/html/ched-work/ched-management/app/Http/Controllers/Auth/LoginController.php",
+		"/var/www/html/ched-work/ched-management/app/User.php",
+		"/var/www/html/ched-work/ched-management/app/Http/Controllers/DashboardController.php",
+		"/var/www/html/ched-work/ched-management/routes/web.php",
+		"/var/www/html/ched-work/ched-management/app/Providers/BroadcastServiceProvider.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastManager.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/var/www/html/ched-work/ched-management/resources/views/auth/login-bac.blade.php",
+		"/var/www/html/ched-work/ched-management/database/migrations/2019_09_06_133046_create_employees_table.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Factory.php",
+		"/home/mi-dev/.config/sublime-text-3/Packages/AdvancedNewFile/Default (Linux).sublime-keymap",
+		"/var/www/html/ched-work/ched-management/app/Http/Controllers/DashboardCOntroller.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php",
+		"/var/www/html/ched-work/ched-management/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ThrottlesLogins.php"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 181.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"generatedRecordIDs",
+			"public",
+			"fileMeta",
+			"generatedPDFIDs",
+			"SQL_conn",
+			"private",
+			"config"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ungeneratedRecordIDs"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/Model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 229.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/PDFGenerator.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 75.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "report-generator.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sales/in",
+				"resources/views/sales/index.blade.php"
+			],
+			[
+				"depa",
+				"public/assets/js/app/departments.js"
+			],
+			[
+				"over",
+				"public/assets/css/overwrite.css"
+			],
+			[
+				"sideb",
+				"resources/views/layouts/sidebar.blade.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"AllS",
+				"app/Http/Controllers/AllSalesController.php"
+			],
+			[
+				"Sale",
+				"app/Sale.php"
+			],
+			[
+				"create_sa",
+				"database/migrations/2019_09_13_151126_create_sales_table.php"
+			],
+			[
+				"app",
+				"public/assets/js/app_model.js"
+			],
+			[
+				"departmen",
+				"public/assets/js/app/departments.js"
+			],
+			[
+				"side",
+				"resources/views/layouts/sidebar.blade.php"
+			],
+			[
+				"app.b",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"azia",
+				"public/assets/css/azia.css"
+			],
+			[
+				"department/ind",
+				"resources/views/departments/index.blade.php"
+			],
+			[
+				"",
+				"resources/views/dashboard/index.blade.php"
+			],
+			[
+				"401",
+				"resources/views/errors/401.blade.php"
+			],
+			[
+				"Dashb",
+				"app/Http/Controllers/DashboardController.php"
+			],
+			[
+				"Depart/in",
+				"resources/views/departments/index.blade.php"
+			],
+			[
+				"AllDepa",
+				"app/Http/Controllers/AllDepartmentsController.php"
+			],
+			[
+				"department",
+				"public/assets/js/app/departments.js"
+			],
+			[
+				"login",
+				"resources/views/auth/login.blade.php"
+			],
+			[
+				"dashb/",
+				"resources/views/dashboard/index.blade.php"
+			],
+			[
+				"depa/",
+				"resources/views/departments/index.blade.php"
+			],
+			[
+				"ThisRoute",
+				"app/Http/Middleware/ThisRouteAccess.php"
+			],
+			[
+				"create_role",
+				"database/migrations/2019_09_12_105455_create_roles_table.php"
+			],
+			[
+				"create_empl",
+				"database/migrations/2019_09_08_221650_create_employees_table.php"
+			],
+			[
+				"create_depa",
+				"database/migrations/2019_09_09_151429_create_departments_table.php"
+			],
+			[
+				"Role",
+				"app/Role.php"
+			],
+			[
+				"create_",
+				"database/migrations/2019_09_09_151429_create_departments_table.php"
+			],
+			[
+				"Up",
+				"app/Http/Requests/UpdateDepartment.php"
+			],
+			[
+				"Crea",
+				"app/Http/Requests/CreateDepartment.php"
+			],
+			[
+				"ove",
+				"public/assets/css/overwrite.css"
+			],
+			[
+				"depa/in",
+				"resources/views/departments/index.blade.php"
+			],
+			[
+				"Updat",
+				"app/Http/Requests/UpdateDepartment.php"
+			],
+			[
+				"departments/crea",
+				"resources/views/departments/create.blade.php"
+			],
+			[
+				"Depa",
+				"app/Http/Controllers/DepartmentController.php"
+			],
+			[
+				"department/",
+				"resources/views/departments/index.blade.php"
+			],
+			[
+				"departments/",
+				"resources/views/departments/index.blade.php"
+			],
+			[
+				"Departments/",
+				"resources/views/departments/create.blade.php"
+			],
+			[
+				"Create",
+				"app/Http/Requests/CreateDepartment.php"
+			],
+			[
+				"create_de",
+				"database/migrations/2019_09_09_151429_create_departments_table.php"
+			],
+			[
+				"app_",
+				"public/assets/js/app_model.js"
+			],
+			[
+				"DepartmentC",
+				"app/Http/Controllers/DepartmentController.php"
+			],
+			[
+				"CreateDe",
+				"app/Http/Requests/CreateDepartment.php"
+			],
+			[
+				"ALl",
+				"app/Http/Controllers/AllDepartmentsController.php"
+			],
+			[
+				"header",
+				"resources/views/layouts/header.blade.php"
+			],
+			[
+				"Emp",
+				"app/Employee.php"
+			],
+			[
+				"Authen",
+				"app/Http/Middleware/Authenticate.php"
+			],
+			[
+				"All",
+				"app/Http/Controllers/AllDepartmentsController.php"
+			],
+			[
+				"we",
+				"routes/web.php"
+			],
+			[
+				"Dashboard/",
+				"resources/views/dashboard/index.blade.php"
+			],
+			[
+				"all.min",
+				"public/assets/lib/fontawesome-free/css/all.min.css"
+			],
+			[
+				"dashbo/",
+				"resources/views/dashboard/index.blade.php"
+			],
+			[
+				"DashboardC",
+				"app/Http/Controllers/DashboardController.php"
+			],
+			[
+				"route/we",
+				"routes/web.php"
+			],
+			[
+				"Emplo",
+				"app/Employee.php"
+			],
+			[
+				"App\\Use",
+				"app/User.php"
+			],
+			[
+				"App/Http/Auth",
+				"app/Http/Controllers/Auth/LoginController.php"
+			],
+			[
+				"login-",
+				"resources/views/auth/login-bac.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/var/www/html/ched-work/report-gen/report-gen.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 352.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
