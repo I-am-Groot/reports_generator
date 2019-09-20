@@ -6,10 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Config' => $baseDir . '/src/config.php',
     'App\\DB' => $baseDir . '/src/DB.php',
+    'App\\DBConfig' => $baseDir . '/src/DBConfig.php',
+    'App\\MailConfig' => $baseDir . '/src/MailConfig.php',
     'App\\Model' => $baseDir . '/src/Model.php',
     'App\\ReportGenerator' => $baseDir . '/src/ReportGenerator.php',
+    'App\\ReportMailer' => $baseDir . '/src/ReportMailer.php',
     'Cpdf' => $vendorDir . '/dompdf/dompdf/lib/Cpdf.php',
     'Dompdf\\Adapter\\CPDF' => $vendorDir . '/dompdf/dompdf/src/Adapter/CPDF.php',
     'Dompdf\\Adapter\\GD' => $vendorDir . '/dompdf/dompdf/src/Adapter/GD.php',

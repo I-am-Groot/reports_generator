@@ -2,13 +2,13 @@
 
 namespace App;
 
-use App\Config;
+use App\DBConfig;
 use \PDO;
 
 class DB extends PDO
 {
 	public function __construct() {
-		$this->config = new Config();
+		$this->config = new DBConfig();
 
 		$dsn = sprintf('mysql:host=%1$s;dbname=%2$s',
 						$this->config->dbHost,

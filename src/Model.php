@@ -12,6 +12,7 @@ class Model extends DB
 	public $generatedRecordIDs = [];
 	public $availableRecords = [];
 	public $applicableRecords = [];
+	public $generatedRecords = [];
 	
 	public function _construct() {
 		parent::__construct();
@@ -93,10 +94,10 @@ class Model extends DB
 
 	public function setPDFGeneratedStatus(array $persitentData) {
 		$toBePersisted = [
-			':region_id' => $persitentData['region_id'],
+			':region_id'      => $persitentData['region_id'],
 			':report_file_id' => $persitentData['report_file_id'],
-			':status' => 'generated',
-			':created_at' => date('Y-m-d H:i:s'),
+			':status'         => 'generated',
+			':created_at'     => date('Y-m-d H:i:s'),
 		];
 
 		(($this->autoPreparePDO(
@@ -104,6 +105,39 @@ class Model extends DB
 			$toBePersisted, 
 			'count'
 		)) > 0) ? true : false;
+	}
+
+	public function setReportSentStatus($reportID) {
+		$toBePersisted = [
+			':status' => 'sent',
+		];
+
+		(($this->autoPreparePDO(
+			'UPDATE daily_report_tracker SET status = :status, updated_at = :updated_at WHERE id = :id',
+			[
+				':status'     => 'sent',
+				':id'         => $reportID,
+				':updated_at' => date('Y-m-d H:i:s'),
+			], 
+			'count'
+		)) > 0) ? true : false;
+	}
+
+	public function getGeneratedReport() {
+		$records = $this->autoPreparePDO(
+			'SELECT id, region_id, report_file_id, status, created_at, updated_at,
+			(SELECT email FROM report_receivers WHERE MainQuery.region_id = region_id LIMIT 1) AS email,
+			(SELECT concat(firstname, lastname) FROM report_receivers WHERE MainQuery.region_id = region_id LIMIT 1) AS fullname
+			 FROM daily_report_tracker AS MainQuery WHERE created_at > :start_time AND status = :status', 
+			[':start_time' => date('Y-m-d ') . $this->recordGenStartTime, ':status' => 'generated'],
+			'raw'
+		);
+
+		while ($record = $records->fetch(PDO::FETCH_OBJ)) {
+			$this->generatedRecords[] = $record;
+		}
+
+		return $this->generatedRecords;
 	}
 }
 

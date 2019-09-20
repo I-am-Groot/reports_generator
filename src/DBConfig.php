@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Config
+class DBConfig
 {
 	public $dbHost = 'localhost';
 	public $dbName = 'CHED';

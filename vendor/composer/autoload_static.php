@@ -63,10 +63,12 @@ class ComposerStaticInit28483ad2cab6b3e7a67b86b214c53fd1
     );
 
     public static $classMap = array (
-        'App\\Config' => __DIR__ . '/../..' . '/src/config.php',
         'App\\DB' => __DIR__ . '/../..' . '/src/DB.php',
+        'App\\DBConfig' => __DIR__ . '/../..' . '/src/DBConfig.php',
+        'App\\MailConfig' => __DIR__ . '/../..' . '/src/MailConfig.php',
         'App\\Model' => __DIR__ . '/../..' . '/src/Model.php',
         'App\\ReportGenerator' => __DIR__ . '/../..' . '/src/ReportGenerator.php',
+        'App\\ReportMailer' => __DIR__ . '/../..' . '/src/ReportMailer.php',
         'Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
         'Dompdf\\Adapter\\CPDF' => __DIR__ . '/..' . '/dompdf/dompdf/src/Adapter/CPDF.php',
         'Dompdf\\Adapter\\GD' => __DIR__ . '/..' . '/dompdf/dompdf/src/Adapter/GD.php',

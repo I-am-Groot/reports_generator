@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"array_pa",
+				"array_param"
+			],
+			[
+				"string",
+				"string_param"
+			],
+			[
 				"th",
 				"this"
 			],
@@ -159,16 +167,34 @@
 			"file": "src/Model.php",
 			"settings":
 			{
-				"buffer_size": 1766,
+				"buffer_size": 2715,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/PDFGenerator.php",
+			"file": "src/DB.php",
 			"settings":
 			{
-				"buffer_size": 1096,
+				"buffer_size": 2184,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/ReportGenerator.php",
+			"settings":
+			{
+				"buffer_size": 1231,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/ReportMailer.php",
+			"settings":
+			{
+				"buffer_size": 291,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -177,7 +203,7 @@
 			"file": "public/index.php",
 			"settings":
 			{
-				"buffer_size": 133,
+				"buffer_size": 139,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -236,10 +262,13 @@
 	"expanded_folders":
 	[
 		"/var/www/html/ched-work/report-generator",
+		"/var/www/html/ched-work/report-generator/public",
 		"/var/www/html/ched-work/report-generator/src"
 	],
 	"file_history":
 	[
+		"/var/www/html/ched-work/report-generator/views/record-view.php",
+		"/var/www/html/ched-work/report-generator/vendor/dompdf/dompdf/src/Dompdf.php",
 		"/var/www/html/ched-work/report-generator/src/DB.php",
 		"/var/www/html/ched-work/report-generator/src/config.php",
 		"/var/www/html/ched-work/report-generator/composer.json",
@@ -321,6 +350,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"GROUP BY",
+			"getAllUngeneratedRecordIDs",
 			"generatedRecordIDs",
 			"public",
 			"fileMeta",
@@ -346,7 +377,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -355,15 +386,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1766,
+						"buffer_size": 2715,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								385,
-								385
+								298,
+								298
 							]
 						],
 						"settings":
@@ -373,27 +404,57 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 229.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/PDFGenerator.php",
+					"file": "src/DB.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1096,
+						"buffer_size": 2184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								2074,
+								2074
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/ReportGenerator.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								412,
+								412
 							]
 						],
 						"settings":
@@ -410,20 +471,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "public/index.php",
+					"buffer": 3,
+					"file": "src/ReportMailer.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 133,
+						"buffer_size": 291,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								133,
-								133
+								284,
+								284
 							]
 						],
 						"settings":
@@ -433,6 +494,35 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 21.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -480,7 +570,7 @@
 	"project": "report-generator.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

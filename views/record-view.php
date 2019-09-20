@@ -15,14 +15,14 @@
               </tr>
             </thead>
             <tbody><?php $counter = 0; ?>
-              <?php foreach($records as $record){ ?>
+              <?php foreach($records as $record): ?>
               <tr>
                 <th scope="row"><?php echo $counter + 1; ?></th>
                 <td><?php echo $record->item_name; ?></td>
                 <td><?php echo $record->item_price; ?></td>
               </tr>
             <?php $counter += 1; ?>
-            <?php } ?>
+            <?php endforeach; ?>
             </tbody>
           </table>
         </div>
