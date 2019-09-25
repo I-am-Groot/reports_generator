@@ -54,6 +54,12 @@ class Model extends DB
 	public function getAllUngeneratedRecordIDs() {
 		$params = $this->inSQLHelper($this->getAllGeneratedRecordIDs());
 
+		// $records = $this->autoPreparePDO(
+		// 	"SELECT region_id FROM sales " . (empty($params['array_param']) ? "" : "WHERE region_id NOT IN ({$params['string_param']}) ") . "GROUP BY region_id",
+		// 	$params['array_param'],
+		// 	'raw'
+		// );
+
 		if (empty($params['array_param'])) {
 			$records = $this->autoPreparePDO(
 				"SELECT region_id FROM sales GROUP BY region_id",
@@ -72,7 +78,7 @@ class Model extends DB
 		while ($record = $records->fetch(PDO::FETCH_OBJ)) {
 			$this->ungeneratedRecordIDs[] = $record->region_id;
 		}
-		
+
 		return $this->ungeneratedRecordIDs;
 	}
 
@@ -126,8 +132,10 @@ class Model extends DB
 	public function getGeneratedReport() {
 		$records = $this->autoPreparePDO(
 			'SELECT id, region_id, report_file_id, status, created_at, updated_at,
-			(SELECT email FROM report_receivers WHERE MainQuery.region_id = region_id LIMIT 1) AS email,
-			(SELECT concat(firstname, lastname) FROM report_receivers WHERE MainQuery.region_id = region_id LIMIT 1) AS fullname
+			(SELECT email FROM report_receipients WHERE MainQuery.region_id = region_id LIMIT 1) AS email,
+			(SELECT concat(lastname) FROM report_receipients WHERE MainQuery.region_id = region_id LIMIT 1) AS receipient_lastname,
+			(SELECT concat(firstname) FROM report_receipients WHERE MainQuery.region_id = region_id LIMIT 1) AS receipient_firstname,
+			(SELECT concat(title) FROM report_receipients WHERE MainQuery.region_id = region_id LIMIT 1) AS receipient_title
 			 FROM daily_report_tracker AS MainQuery WHERE created_at > :start_time AND status = :status', 
 			[':start_time' => date('Y-m-d ') . $this->recordGenStartTime, ':status' => 'generated'],
 			'raw'

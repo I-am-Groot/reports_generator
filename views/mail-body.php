@@ -99,7 +99,7 @@
           <div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; max-width: 580px; padding: 10px;">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;"><?php echo date('F j, Y'); ?>'s report.</span>
+            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;"><?php echo date('F j, Y'); ?> Report.</span>
             <table class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff; border-radius: 3px;">
 
               <!-- START MAIN CONTENT AREA -->
@@ -108,7 +108,7 @@
                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                     <tr>
                       <td style="font-family: Raleway; font-size: 14px; vertical-align: top;">
-                        <p style="font-family: Raleway; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi there,</p>
+                        <p style="font-family: Raleway; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Dear <?php echo $reportData->receipient_title . ' ' . $reportData->receipient_lastname; ?>,</p>
                         <br>
                         <p style="font-family: Raleway; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Today's report has been generated and is ready for you to examine.</p>
                          <p style="font-family: Raleway; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Attached is the report in Portable Document File (PDF).</p>

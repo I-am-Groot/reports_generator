@@ -4,7 +4,7 @@ namespace App;
 
 class ViewLoader
 {
-	private $templatePath = '../views/record-view.php';
+	private $templatePath;
 
 	public function setTemplatePath($path) {
 		$this->templatePath = $path;

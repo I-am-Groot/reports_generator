@@ -28,7 +28,10 @@ class ReportGenerator extends Model
 
 	public function makePDF() {
 		$fileID = time() . rand(1, 1000);
-		$this->PDF->loadHtml($this->viewLoader->render($this->applicableRecords));
+		$this->PDF->loadHtml($this->viewLoader->render([
+			'records' => $this->applicableRecords
+		]));
+
 		$this->PDF->render();
 		file_put_contents(
 			rtrim($this->storageDirectory, '/') . '/' . $fileID . '.pdf',

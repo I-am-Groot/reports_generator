@@ -48,15 +48,17 @@ class ReportMailer extends Model
 	public function initContent() {
 		$this->mailer->Subject = $this->config->subject;
 
-		$this->mailer->Body = $this->viewLoader->setTemplatePath($this->bodyView)
-												->render([
-													'reportData' => $this->generatedRecords[0]
-												]);
+		$this->mailer->Body = $this->viewLoader
+									->setTemplatePath($this->bodyView)
+									->render([
+										'reportData' => $this->generatedRecords[0]
+									]);
 
-		$this->mailer->AltBody = $this->viewLoader->setTemplatePath($this->altBodyView)
-												->render([
-													'reportData' => $this->generatedRecords[0]
-												]);
+		$this->mailer->AltBody = $this->viewLoader
+										->setTemplatePath($this->altBodyView)
+										->render([
+											'reportData' => $this->generatedRecords[0]
+										]);
 	}
 
 	public function initAttachment($filePath) {
