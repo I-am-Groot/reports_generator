@@ -2,31 +2,34 @@
 
 namespace App;
 
+use App\Model;
 use Dompdf\Dompdf;
 use App\ViewLoader;
-use App\RecordGeneratorModel;
 
-class ReportGenerator extends RecordGeneratorModel
+class ReportGenerator extends Model
 {
 	private $PDF;
 	private $viewLoader;
-	private $templatePath = '../views/regional-template.php';
+	private $templatePath = '../views/record-view.php';
 	private $storageDirectory = '../public/PDFs/';
 	
 	public function __construct() {
 		parent::__construct();
 
+		$this->getAllUngeneratedRecordIDs();
+		$this->getAllRecordsToBeGeneratedByID();
+
 		$this->viewLoader = new ViewLoader();
 		$this->viewLoader->setTemplatePath($this->templatePath);
 
 		$this->PDF = new Dompdf();
-		$this->PDF->set_paper('A2', 'portrait');
+		$this->PDF->set_paper('A4', 'portrait');
 	}
 
 	public function makePDF() {
 		$fileID = time() . rand(1, 1000);
 		$this->PDF->loadHtml($this->viewLoader->render([
-			'records' => $this->allRegionIDScopedData
+			'records' => $this->applicableRecords
 		]));
 
 		$this->PDF->render();
@@ -39,16 +42,14 @@ class ReportGenerator extends RecordGeneratorModel
 			return;
 		}
 
-		// $this->setPDFGeneratedStatus([
-		// 	'region_id' => $this->currentRecordRegionID,
-		// 	'report_file_id' => $fileID,
-		// ]);
+		$this->setPDFGeneratedStatus([
+			'region_id' => $this->ungeneratedRecordIDs[0],
+			'report_file_id' => $fileID,
+		]);
 	}
 
 	public function init() {
-		$this->setRecordGenStartTime('7:00:00');
-		
-		if (is_null($this->fetchAllRegionDataByID($this->setCurrentRecordRegionID()))) {
+		if (empty($this->ungeneratedRecordIDs) || empty($this->applicableRecords)) {
 			return;
 		}
 

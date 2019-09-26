@@ -22,3 +22,10 @@ elseif ($_GET['action'] == 'dispatch-record') {
 	$sendReport = new ReportMailer();
 	$sendReport->commenceDispatch();
 }
+
+// use App\RecordGeneratorModel;
+
+// $foo = new RecordGeneratorModel();
+
+// echo '<pre>';
+// print_r($foo->setCurrentRecordRegionID());
